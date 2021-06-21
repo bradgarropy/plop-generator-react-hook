@@ -1,4 +1,4 @@
-const component = {
+const hook = {
     description: "⚛ react hook",
     prompts: [
         {
@@ -31,4 +31,4 @@ const component = {
     ],
 }
 
-export default component
+export default hook

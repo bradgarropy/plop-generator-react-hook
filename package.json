@@ -13,9 +13,9 @@
         "plop-generator",
         "react"
     ],
-    "homepage": "https://github.com/bradgarropy/plop-generator-react-component",
+    "homepage": "https://github.com/bradgarropy/plop-generator-react-hook",
     "bugs": {
-        "url": "https://github.com/bradgarropy/plop-generator-react-component/issues"
+        "url": "https://github.com/bradgarropy/plop-generator-react-hook/issues"
     },
     "license": "MIT",
     "author": {
@@ -30,7 +30,7 @@
     "types": "dist/types/index.d.ts",
     "repository": {
         "type": "git",
-        "url": "https://github.com/bradgarropy/plop-generator-react-component"
+        "url": "https://github.com/bradgarropy/plop-generator-react-hook"
     },
     "scripts": {
         "start": "tsc --watch",
