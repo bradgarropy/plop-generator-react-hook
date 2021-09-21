@@ -9,13 +9,8 @@ const context = {
     ],
     actions: [
         {
-            type: "append",
-            path: "src/context/index.ts",
-            templateFile: "./templates/index.hbs",
-        },
-        {
             type: "add",
-            path: "src/context/{{pascalCase name}}.tsx",
+            path: "src/context/{{pascalCase name}}/{{pascalCase name}}.ts",
             templateFile: "./templates/context.hbs",
         },
     ],

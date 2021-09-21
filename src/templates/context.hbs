@@ -1,20 +1,15 @@
-import {createContext, FC, useContext} from "react"
+import {createContext} from "react"
 
-type {{pascalCase name}}ContextType = Record<string, any>
+const {{pascalCase name}}Context = createContext()
 
-const {{pascalCase name}}Context = createContext({} as {{pascalCase name}}ContextType)
-
-const {{pascalCase name}}Provider: FC = ({children}) => {
-    const context: {{pascalCase name}}ContextType = {}
+const {{pascalCase name}}Provider = ({children}) => {
+    const context = {}
 
     return (
-        <{{pascalCase name}}Context.Provider value={context}>{children}</{{pascalCase name}}Context.Provider>
+        <{{pascalCase name}}Context.Provider value={context}>
+            {children}
+        </{{pascalCase name}}Context.Provider>
     )
 }
 
-const use{{pascalCase name}} = (): {{pascalCase name}}ContextType => {
-    const {{camelCase name}}Ctx = useContext({{pascalCase name}}Context)
-    return {{camelCase name}}Ctx
-}
-
-export { {{pascalCase name}}Context, {{pascalCase name}}Provider, use{{pascalCase name}} }
+export { {{pascalCase name}}Context, {{pascalCase name}}Provider}
