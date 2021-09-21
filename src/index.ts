@@ -1,10 +1,10 @@
 import {NodePlopAPI} from "node-plop"
 
-import hook from "./hook"
+import context from "./context"
 
 const generator = (plop: NodePlopAPI): void => {
     plop.setDefaultInclude({generators: true})
-    plop.setGenerator("hook", hook)
+    plop.setGenerator("context", context)
 }
 
 export default generator
